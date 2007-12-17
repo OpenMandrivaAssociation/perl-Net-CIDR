@@ -15,7 +15,6 @@ Url:		http://search.cpan.org/dist/Net-CIDR/
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 With this module, you can manipulate IPv4/IPv6 netblocks in CIDR notation.
