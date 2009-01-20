@@ -1,7 +1,7 @@
 %define module	Net-CIDR
 %define name	perl-%{module}
-%define version 0.11
-%define release %mkrel 6
+%define version 0.13
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
