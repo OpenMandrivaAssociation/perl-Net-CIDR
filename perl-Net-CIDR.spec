@@ -1,16 +1,16 @@
-%define module	Net-CIDR
-%define name	perl-%{module}
-%define version 0.13
-%define release %mkrel 1
+%define upstream_name	 Net-CIDR
+%define upstream_version 0.13
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Manipulate IPv4/IPv6 netblocks in CIDR notation
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/Net-CIDR/
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
@@ -21,7 +21,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}
 With this module, you can manipulate IPv4/IPv6 netblocks in CIDR notation.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -42,4 +42,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/Net
 %{_mandir}/*/*
-
