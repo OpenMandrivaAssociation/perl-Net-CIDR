@@ -1,15 +1,15 @@
 %define upstream_name	 Net-CIDR
-%define upstream_version 0.14
+%define upstream_version 0.17
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.17
+Release:	1
 
 Summary:	Manipulate IPv4/IPv6 netblocks in CIDR notation
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Net/Net-CIDR-0.17.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
@@ -75,4 +75,5 @@ With this module, you can manipulate IPv4/IPv6 netblocks in CIDR notation.
 
 * Tue Apr 18 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.11-1mdk
 - contributed by Cedric Devillers <brancaleone@altern.org>
+
 
