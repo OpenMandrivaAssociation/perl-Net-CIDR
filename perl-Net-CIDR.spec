@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.17
-Release:	1
+Release:	2
 
 Summary:	Manipulate IPv4/IPv6 netblocks in CIDR notation
 License:	GPL+ or Artistic
