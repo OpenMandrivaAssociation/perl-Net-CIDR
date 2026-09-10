@@ -1,8 +1,8 @@
 %define modname	Net-CIDR
 Summary:	Manipulate IPv4/IPv6 netblocks in CIDR notation
 Name:		perl-%{modname}
-Version:	0.17
-Release:	13
+Version:	0.27
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{modname}
