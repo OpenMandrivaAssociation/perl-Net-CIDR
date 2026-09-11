@@ -10,6 +10,7 @@ Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Net/%{modname}-%{versi
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
+BuildRequires:	perl(Test::More)
 
 %description
 With this module, you can manipulate IPv4/IPv6 netblocks in CIDR notation.
